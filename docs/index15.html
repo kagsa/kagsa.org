@@ -103,6 +103,25 @@
         <br>
         <br>
         <p>When you are finished, we will send you your certificate from <code>admin@kagsa.org</code> to your e-mail as soon as possible.</p>
+        <br>
+        <h2>Search for Your ID</h2>
+        <script>
+          function check(){
+            const Http = new XMLHttpRequest();
+            const url='http://kagsa.epizy.com/?n=' + document.getElementById('certificate').value;
+            Http.open("GET", url);
+            Http.send();
+
+            Http.onreadystatechange = (e) => {
+              document.getElementById('check-out').innerHTML = Http.responseText
+            }
+          }
+        </script>
+        <input type="text" id="certificate" placeholder="Certificate ID">
+        <button onclick="check()">Search</button>
+        <p id="check-out"></p>
+
+        
         <center>
         <br><br>
         <style>
