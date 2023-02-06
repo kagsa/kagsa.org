@@ -106,6 +106,12 @@
         <br>
         <h2>Search for Your ID</h2>
         <script>
+          if (window.location.protocol.indexOf('https') == 0){
+            var el = document.createElement('meta')
+            el.setAttribute('http-equiv', 'Content-Security-Policy')
+            el.setAttribute('content', 'upgrade-insecure-requests')
+            document.head.append(el)
+          }
           function check(){
             const Http = new XMLHttpRequest();
             const url='http://kagsa.epizy.com/?n=' + document.getElementById('certificate').value;
@@ -121,7 +127,7 @@
         <button onclick="check()">Search</button>
         <p id="check-out"></p>
 
-        
+
         <center>
         <br><br>
         <style>
