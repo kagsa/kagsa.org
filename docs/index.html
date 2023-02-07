@@ -87,8 +87,9 @@
         
         <li class="nav-item"><a class="nav-link active" href="#kagsa-documents">KAGSA Documents</a>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#command-line-usage">Command Line Usage</a></li>
             <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#code-editors">Code Editors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#command-line-usage">Command Line Usage</a></li>
             <li class="nav-item"><a class="nav-link" href="#run">Run</a></li>
             <li class="nav-item"><a class="nav-link" href="#build-a-library">Build a Library</a></li>
             <li class="nav-item"><a class="nav-link" href="#version">Version</a></li>
@@ -107,8 +108,14 @@
       <div class="container" id="doc-content"> 
         <h1 id="kagsa-documents">KAGSA Documents</h1>
         <p>In these documents, we will learn how to work with KAGSA language and how to write professional code. You can get <strong>certified</strong> after passing a simple test as an encouragement from us to the KAGSA community.</p>
+        
         <h2 id="installation">Installation</h2>
         <p>This page will help you .. <a href="http://kagsa.org/download/help.html">How to Download KAGSA ?</a></p>
+
+        <h2 id="code-editors">Code Editors</h2>
+        <p>Until now you can just use syntax highlighting in <b>VSCode</b> and <b>Notepad++</b></p>
+        <a href="npp.html"><img src="https://notepad-plus-plus.org/images/logo.svg" style="width: 5vw;"></a>
+        <a href="vscode.html"><img src="https://code.visualstudio.com/favicon.ico" style="width: 5vw;"></a><br><br>
         <h2 id="command-line-usage">Command Line Usage</h2>
         <pre><code>kagsa [<span class="hljs-symbol">run:</span>&lt;filename&gt;]
               [<span class="hljs-class"><span class="hljs-keyword">lib</span>:-<span class="hljs-title">l</span> &lt;<span class="hljs-title">filename</span>&gt; -<span class="hljs-title">o</span> &lt;<span class="hljs-title">output</span>&gt;]</span>
@@ -116,10 +123,12 @@
               [<span class="hljs-symbol">updates:</span> -u --updates]
               [<span class="hljs-symbol">help:</span> -h --help]
         </code></pre><p>you can use <code>kg</code> or <code>kagsa</code> for call kagsa in your terminal.</p>
+        
         <h2 id="run">Run</h2>
         <p>this is for run a kagsa file, file is must end with <code>.kg</code></p>
-        <pre><code>kagsa <span class="hljs-built_in">file</span>.kg
-        </code></pre><h2 id="build-a-library">Build a Library</h2>
+        <pre><code>kagsa <span class="hljs-built_in">file</span>.kg</code></pre>
+
+        <h2 id="build-a-library">Build a Library</h2>
         <p>this used to create library from <code>.kg</code> file</p>
         <p>you will learn how to write a library later</p>
         <ul>
@@ -138,20 +147,24 @@
         </ul>
         </li>
         </ul>
-        <pre><code>kagsa -l <span class="hljs-built_in">file</span>.kg -o <span class="hljs-built_in">file</span>.kgl
-        </code></pre><p>KGL files is a kagsa library extention</p>
+        <pre><code>kagsa -l <span class="hljs-built_in">file</span>.kg -o <span class="hljs-built_in">file</span>.kgl</code></pre>
+        <p>KGL files is a kagsa library extention</p>
+
         <h2 id="version">Version</h2>
         <p>this will give you the current kagsa version</p>
         <pre><code>kagsa -v
         kagsa <span class="hljs-comment">--version</span>
+
         </code></pre><h2 id="updates">Updates</h2>
         <p>this will check if there a new updates on github</p>
         <pre><code>kagsa -u
         kagsa <span class="hljs-comment">--updates</span>
+
         </code></pre><h2 id="help">Help</h2>
         <p>this will print help message</p>
         <pre><code>kagsa -<span class="hljs-built_in">h</span>
         kagsa --<span class="hljs-keyword">help</span>
+
         </code></pre><h2 id="console">Console</h2>
         <p>if you call kagsa without any argvs this will take you to a kagsa console, write your codes one by one.</p>
         <pre><code><span class="hljs-attribute">kagsa</span>
