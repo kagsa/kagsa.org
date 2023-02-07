@@ -114,7 +114,7 @@
           }
           function check(){
             const Http = new XMLHttpRequest();
-            const url='http://kagsa.epizy.com/?n=' + document.getElementById('certificate').value;
+            const url='http://kagsa.pythonanywhere.com/certificate/' + document.getElementById('certificate').value;
             Http.open("GET", url);
             Http.send();
 
