@@ -164,6 +164,13 @@ const auto_typing = (id,text,speed) =>  {
         font-size: 4vw;
         text-shadow: 0px 0px 10px black;
       }
+      .sm-ico {
+        width : 3vw;
+        filter: drop-shadow(1px 0 0 white) 
+        drop-shadow(0 1px 0 white)
+        drop-shadow(-1px 0 0 white) 
+        drop-shadow(0 -1px 0 white);
+      }
       #bird {
         width: 100%;
         margin-left: 0%;
@@ -179,9 +186,7 @@ const auto_typing = (id,text,speed) =>  {
     </div>
     <div class="idocs-content" style="margin-left: 0;">
       <div class="container"> 
-        
         <br>
-
         <script>setTimeout(()=>{ auto_typing('welcome-to-kagsa-org', 'Welcome To KAGSA.ORG',70)},900);</script>
 
         <!--Code Start-->
@@ -233,8 +238,16 @@ const auto_typing = (id,text,speed) =>  {
     <div class="container">
       <p class="text-center">KAGSA Programming Language - www.kagsa.org</p>
       <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
-	  <p class="text-2 text-center mb-0">Template by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
-    </div>
+	    <p class="text-2 text-center mb-0">Template by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+      <br>
+      <div id="social-media">
+        <center>
+        <a target="_blank" href="https://github.com/kagsa"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="sm-ico"></a>&emsp;&emsp;
+        <a target="_blank" href="https://www.instagram.com/kagsa_org"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="sm-ico"></a>&emsp;&emsp;
+        <a target="_blank" href="https://www.twitter.com/kagsa_org"><img src="https://www.svgrepo.com/show/20942/twitter.svg" class="sm-ico"></a>
+        </center>
+      </div>
+  </div>
   </footer>
   <!-- Footer end -->
   
