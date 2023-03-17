@@ -41,6 +41,8 @@ const auto_typing = (id,text,speed) =>  {
   <link rel="stylesheet" type="text/css" href="download/assets/vendor/magnific-popup/magnific-popup.min.css" />
   <link rel="stylesheet" type="text/css" href="download/assets/vendor/highlight.js/styles/github.css" />
   <link rel="stylesheet" type="text/css" href="download/assets/css/stylesheet.css" />
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125" id="body">
@@ -80,6 +82,26 @@ const auto_typing = (id,text,speed) =>  {
           <ul class="navbar-nav">
             <li><a target="_blank" href="https://www.kagsa.org/download/">Download</a></li>
             <li><a target="_blank" href="https://www.kagsa.org/docs/index.html">Documents</a></li>
+            
+            <link rel="stylesheet" href="file.css">
+            <li class="nav-item nav-item-dropdown">
+              <a class="dropdown-trigger" id="social-text" href="#">Social</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu-item">
+                  <a href="https://www.instagram.com/kagsa_org"><img src="ig.png" class="sm-ico">&ensp; Instagram</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="https://www.twitter.com/kagsa_org"><img src="tw.svg" class="sm-ico">&ensp; Twitter</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="https://discord.gg/q6ZmHU6DpM"><img src="dc.png" class="sm-ico">&ensp; Discord</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="mailto:admin@kagsa.org"><img src="ml.png" class="sm-ico">&ensp; Email</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="social-icons-twitter"><a data-toggle="tooltip"  href="http://github.com/kagsa/kagsa" target="_blank" title="" data-original-title="GitHub"><i> <img src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="GitHub"> </i></a></li>
           </ul>
         </div>
@@ -99,87 +121,7 @@ const auto_typing = (id,text,speed) =>  {
     <!-- Docs Content
 	============================ -->
   <br>
-  <style>
-      /*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
-      @media screen and (min-width: 1024px){
-        #code-pre {
-          text-align: left;
-          left: 10px;
-          height: 220px;
-          width: 46%;
-          display: inline-block;
-          background-color: #f8f8f8;
-          position: absolute;
-        }
-        #terminal {
-          text-align: left;
-          position: absolute;
-          right: 10px;
-          width: 46%;
-          display: inline-block;
-          background-color: black;
-          height: 220px;
-          color: white;
-          font-family: Consolas,monaco,monospace;
-        }
-      }
 
-      /*###Tablet(medium)###*/
-      @media screen and (min-width : 768px) and (max-width : 1023px){
-        #code-pre {
-          text-align: left;
-        }
-        #terminal {
-          height: 220px;
-          text-align: left;
-          background-color: black;
-          color: white;
-        }
-        #br-s {
-          display: none;
-        }
-      }
-
-      /*### Smartphones (portrait and landscape)(small)### */
-      @media screen and (min-width : 0px) and (max-width : 767px){
-        #code-pre {
-          text-align: left;
-        }
-        #terminal {
-          height: 220px;
-          text-align: left;
-          background-color: black;
-          color: white;
-        }
-        #br-s {
-          display: none;
-        }
-      }
-      #welcome-to-kagsa-org {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 4vw;
-        text-shadow: 0px 0px 10px black;
-      }
-      .sm-ico {
-        width : 3vw;
-        filter: drop-shadow(1px 0 0 white) 
-        drop-shadow(0 1px 0 white)
-        drop-shadow(-1px 0 0 white) 
-        drop-shadow(0 -1px 0 white);
-      }
-      #bird {
-        width: 100%;
-        margin-left: 0%;
-      }
-      #img-box {
-        position: relative;
-        text-align: center;
-      }
-    </style>
     <div id="img-box">
       <img src="download/assets/bird.jpg" id="bird" alt="Hummingbird Image :)">
       <div id="welcome-to-kagsa-org"></div>
@@ -191,13 +133,13 @@ const auto_typing = (id,text,speed) =>  {
 
         <!--Code Start-->
         <div style="position: relative;text-align: center;">
-          <pre id="code-pre"><code><span class="hljs-built_in">write</span> <span class="hljs-string">'Launching...'</span>;
-<span class="hljs-built_in">if</span> kagsa.org.ok() {
-  <span class="hljs-built_in">write</span> <span class="hljs-string">'KAGSA.ORG has been triggered\n'</span>;
-  <span class="hljs-built_in">write</span> <span class="hljs-string">'Continue browsing'</span>;
+          <pre id="code-pre"><code class="language-lua">write 'Launching...';
+if kagsa.org.ok() {
+  write 'KAGSA.ORG has been triggered\n';
+  write 'Continue browsing';
 }
-<span class="hljs-built_in">else</span>{
-  <span class="hljs-built_in">write</span> <span class="hljs-string">'Maybe a small problem ..!'</span>;
+else{
+  write 'Maybe a small problem ..!';
 }</code></pre>
           <!--Code End-->
           <!--Terminal Start-->
@@ -228,11 +170,7 @@ const auto_typing = (id,text,speed) =>  {
         <li><a href="https://github.com/kagsa/kagsa/archive/refs/tags/1.1.1.tar.gz">Source code (tar.gz)</a></li>
         <br>
         <p>All the Releases ? <a href="https://www.kagsa.org/download/">Here</a></p>
-        <br><hr>
-        <a target="_blank" href="https://github.com/kagsa"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="sm-ico"></a>&emsp;&emsp;
-        <a target="_blank" href="https://www.instagram.com/kagsa_org"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="sm-ico"></a>&emsp;&emsp;
-        <a target="_blank" href="https://www.twitter.com/kagsa_org"><img src="https://www.svgrepo.com/show/20942/twitter.svg" class="sm-ico"></a>&emsp;&emsp;
-        <a target="_blank" href="https://discord.gg/q6ZmHU6DpM"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ac3c481f273141736_icon_clyde_black_RGB.png" class="sm-ico"></a>
+        <br>
     </div>
   </div>
   <!-- Content end --> 
@@ -243,7 +181,7 @@ const auto_typing = (id,text,speed) =>  {
     <div class="container">
       <p class="text-center">KAGSA Programming Language - www.kagsa.org</p>
       <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
-	    <p class="text-2 text-center mb-0">Template by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+	    <p class="text-2 text-center mb-0">Template by <a target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
   </div>
   </footer>
   <!-- Footer end -->

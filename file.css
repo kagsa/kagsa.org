@@ -1,0 +1,131 @@
+/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+@media screen and (min-width: 1024px) {
+  #code-pre {
+    text-align: left;
+    left: 10px;
+    height: 220px;
+    width: 46%;
+    display: inline-block;
+    position: absolute;
+  }
+  #terminal {
+    text-align: left;
+    position: absolute;
+    right: 10px;
+    width: 46%;
+    display: inline-block;
+    background-color: black;
+    height: 220px;
+    color: white;
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  }
+}
+/*###Tablet(medium)###*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #code-pre {
+    text-align: left;
+  }
+  #terminal {
+    height: 220px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  }
+  #br-s {
+    display: none;
+  }
+}
+/*### Smartphones (portrait and landscape)(small)### */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #code-pre {
+    text-align: left;
+  }
+  #terminal {
+    height: 220px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  }
+  #br-s {
+    display: none;
+  }
+}
+#welcome-to-kagsa-org {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vw;
+  text-shadow: 0px 0px 10px black;
+}
+
+.sm-ico {
+  width: 2.5vw;
+  filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+}
+
+#bird {
+  width: 100%;
+  margin-left: 0%;
+}
+
+#img-box {
+  position: relative;
+  text-align: center;
+}
+
+ul,
+li {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3724a5;
+}
+
+.nav-item {
+  padding: 1em;
+  display: inline;
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+.nav-item-dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown-menu {
+  background-color: #1f1f1f;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 160px;
+}
+.dropdown-menu a {
+  color: #fff;
+}
+
+.dropdown-menu-item {
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+  height: 55px;
+}
+.dropdown-menu-item:hover {
+  background-color: black;
+}
+
+#social-text {
+  height: 40px;
+  text-align: center;
+}/*# sourceMappingURL=file.css.map */
