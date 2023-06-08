@@ -231,7 +231,18 @@ LIST.applist(lst2)
 <pre><code><span class="hljs-keyword">write</span> LIST.<span class="hljs-keyword">join</span>(<span class="hljs-string">'-'</span>)
 <span class="hljs-keyword">write</span> <span class="hljs-keyword">join</span>(LIST, <span class="hljs-string">'-'</span>)
 <span class="hljs-comment">// output : 0-a-b-c-d-e-f</span>
-</code></pre><h2 id="loop-with-list">Loop with List</h2>
+</code></pre>
+<ul><li><strong>reverse( )</strong> : reverse a list</li></ul>
+<pre><code>lst = list(1,2,3);
+write lst.reverse()
+write reverse(lst)
+// [3,2,1]</code></pre>
+<ul><li><strong>sorted( )</strong> : sorted a list</li></ul>
+<pre><code>lst = list(3,25,42,44,66,99,10,4);
+write lst.sorted()
+write sorted(lst)
+// [3, 4, 10, 25, 42, 44, 66, 99]</code></pre>
+<h2 id="loop-with-list">Loop with List</h2>
 <h3 id="example-">Example :</h3>
 <pre><code>var list_var = <span class="hljs-type">list</span>(<span class="hljs-number">45245</span>,<span class="hljs-number">454</span>,<span class="hljs-number">5554</span>,<span class="hljs-number">45</span>,<span class="hljs-number">2345</span>,<span class="hljs-number">43</span>)
 for ii -&gt; list_var{
