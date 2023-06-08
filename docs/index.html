@@ -115,6 +115,9 @@
             <li class="nav-item"><a class="nav-link" href="#updates">Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
             <li class="nav-item"><a class="nav-link" href="#console">Console</a></li>
+            <li class="nav-item"><a class="nav-link" href="#setup">Setup</a></li>
+            <li class="nav-item"><a class="nav-link" href="#unsetup">UnSetup</a></li>
+            <li class="nav-item"><a class="nav-link" href="#clear">Clear</a></li>
           </ul>
         </li>
       
@@ -172,22 +175,37 @@
         <h2 id="version">Version</h2>
         <p>this will give you the current kagsa version</p>
         <pre><code>kagsa -v
-        kagsa <span class="hljs-comment">--version</span>
+kagsa <span class="hljs-comment">--version</span>
 
         </code></pre><h2 id="updates">Updates</h2>
         <p>this will check if there a new updates on github</p>
         <pre><code>kagsa -u
-        kagsa <span class="hljs-comment">--updates</span>
+kagsa <span class="hljs-comment">--updates</span>
 
         </code></pre><h2 id="help">Help</h2>
         <p>this will print help message</p>
         <pre><code>kagsa -<span class="hljs-built_in">h</span>
-        kagsa --<span class="hljs-keyword">help</span>
+kagsa --<span class="hljs-keyword">help</span>
 
         </code></pre><h2 id="console">Console</h2>
         <p>if you call kagsa without any argvs this will take you to a kagsa console, write your codes one by one.</p>
         <pre><code><span class="hljs-attribute">kagsa</span>
         </code></pre>
+
+        <h2 id="setup">Setup</h2>
+        <p>setup the library next to the source code of KAGSA kagsasrc/libs, so that you do not need to add the library to your project folder.</p>
+        <pre><code>kagsa --setup LIB.kgl
+kagsa -s LIB.kgl</code></pre>
+
+        <h2 id="unsetup">UnSetup</h2>
+        <p>is to unsetup a library that you setup before.</p>
+        <pre><code>kagsa --unsetup LIB.kgl
+kagsa -us LIB.kgl</code></pre>
+
+        <h2 id="clear">Clear</h2>
+        <p>and it is used to delete temporary files Which KAGSA used, always when you call a KGL library to your project, KAGSA will create temp files to call it, so it is better to delete them every once in a while.</p>
+        <pre><code>kagsa --cleantmp
+kagsa -ct</code></pre>
         
         <center>
         <br><br>
