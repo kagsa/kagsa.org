@@ -10,21 +10,42 @@
 
 
   <script>
+    const auto_typing = (id,text,speed) =>  {
+        var i = 0;
 
-const auto_typing = (id,text,speed) =>  {
-    var i = 0;
-
-    function typeWriter() {
-        if (i < text.length) {
-            document.getElementById(id).innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById(id).innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
         }
+        typeWriter()
+        return 'done';
     }
-    typeWriter()
-    return 'done';
-}
+    var getPyPi = (id) => {
+      var page = '';
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            page = xhttp.responseText;
+          }
+      };
+      xhttp.open("GET", "https://pypistats.org/packages/kagsa", true);
+      xhttp.send();
+      downloads = parseInt(page.match(`Downloads last month:
+([0-9]*)`)[1]);
+      function getpypi () {
+        let i = 0;
+        while (i>downloads) {
+          document.getElementById(id).innerHTML = toString(i)
+          i+=1;
+          setTimeout(getpypi,70);
 
+        }
+        document.getElementById(id).innerHTML = downloads;
+      }
+    }
   </script>
   <!-- SEO Meta
   ============================== -->
@@ -172,6 +193,8 @@ else{
         <br>
         <p>All the Releases ? <a href="https://www.kagsa.org/download/">Here</a></p>
         <br>
+        <h1 id="pypi">0</h1>
+        <script>getPyPi('pypi')</script>
     </div>
   </div>
   <!-- Content end --> 
